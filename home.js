@@ -69,7 +69,7 @@ document.getElementById('add-money-btn').addEventListener('click',function(e){
     const totalAvailableBalance = amount + availableBalance;
     setAvailableBalance(totalAvailableBalance);
 })
-//cashout feature
+//cash out feature
 document.getElementById("withdraw-button").addEventListener('click',function(e){
     e.preventDefault()
     
@@ -106,5 +106,9 @@ document.getElementById("transfer-button").addEventListener('click',function(){
 document.getElementById("bonus-button").addEventListener('click',function(){
    handlerToggle("get-bonus-parent")
    handleToggleButton("bonus-button")
+})
+document.getElementById("bill-button").addEventListener('click',function(){
+   handlerToggle("pay-bill-parent")
+   handleToggleButton("bill-button")
 })
 
